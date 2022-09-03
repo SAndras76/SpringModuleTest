@@ -10,19 +10,22 @@
 <div>
     <table>
         <tr>
-            <th>Registration Code:</th>
+            <th>Reg Code:</th>
             <th>Name:</th>
             <th>Spaceship Class:</th>
-            <th>Spaceship is Actice?: </th>
+            <th>Active (true): </th>
         </tr>
         <tr data-th-each="datas:${spaceshiplist}">
-            <td th:text="${datas.registrationCode}">Registration Code</td>
+            <td th:text="${datas.registrationCode}">Reg Code</td>
             <td th:text="${datas.name}">Name</td>
             <td th:text="${datas.spaceShipClass}">Spaceship Class</td>
-            <td th:text="${datas.isActive}">Active</td>
+            <td th:text="${datas.isActive}">Active (true)</td>
         </tr>
     </table>
 </div>
+<p>
+    <a href="/filterships" th:href="@{/filter}" class="btn btn-large btn-success">Active ships</a>
+</p>
 
 </body>
 </html>

@@ -32,5 +32,13 @@ public class SpaceShipService {
     public List<SpaceShip> getAll() {
         return new ArrayList<>(spaceShip.values());
     }
-
+   /* public List<SpaceShip> getActiveShips() {
+        List<SpaceShip> filter = new ArrayList<>();
+        for (SpaceShip ship : getAll()) {
+            if (ship.isActive()) {
+                filter.add(ship);
+            }
+        }
+        return filter;
+    }*/
 }
