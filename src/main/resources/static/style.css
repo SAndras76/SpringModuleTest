@@ -18,7 +18,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 2cm;
     background-color: var(--dark_gray);
     color: var(--light_gray);
     font-family: 'JetBrains Mono', monospace;
@@ -97,8 +97,8 @@ h1 {
     min-width: 100px;
     padding: 10px;
     font-size: 75%;
-    background-color: var(--gray);
-    border: 2px solid var(--light_gray);
+    background-color: var(--orange);
+    border: 2px solid var(--blue);
     border-radius: 25%;
     cursor: pointer;
 }
