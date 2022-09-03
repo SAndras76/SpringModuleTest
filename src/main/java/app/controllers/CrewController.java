@@ -17,6 +17,10 @@ public class CrewController {
     @Autowired
     private CrewRepo crewRepo;
 
+    public CrewController(CrewRepo crewRepo) {
+        this.crewRepo = crewRepo;
+    }
+
     @GetMapping(value = {"/crewlist"})
     String allCrew (Model model) {
 

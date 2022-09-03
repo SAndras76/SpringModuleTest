@@ -26,7 +26,7 @@ public class OfficerService implements UserDetailsService {
     }
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Officer officer = repo.findByUsername(username);
+        Officer officer = repo.findAllByUsername(username);
         if (username == null) {
             throw new UsernameNotFoundException("User not found");
         }
